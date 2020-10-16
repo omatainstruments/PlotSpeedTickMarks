@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
+
 def main():
     #rad_per_kph = abs((np.pi - (20 * np.pi / 180)) / 40)
     rad_per_kph = abs((np.pi - (np.deg2rad(-90)))/65)
@@ -35,8 +36,8 @@ def main():
     #frame1.axes.get_xaxis().set_ticks([])
     frame1.set_theta_zero_location('W')
     frame1.set_theta_direction(-1)
-    plt.savefig('kph_65_at_90d.eps', format='eps', dpi=100)
-    plt.savefig('kph_65_at_90d.pdf', format='pdf', dpi=100)
+    plt.savefig('kph_65_at_90d.eps', format='eps', dpi=150)
+    plt.savefig('kph_65_at_90d.pdf', format='pdf', dpi=150)
 
 
     # display the Polar plot
